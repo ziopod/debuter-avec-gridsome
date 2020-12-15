@@ -7,6 +7,8 @@
                         src="../../static/logo.svg"
                         :alt="settings.site_name" 
                         class="logo"
+                        width="60px"
+                        height="24px"
                     />
                 </g-link>
             </div>
