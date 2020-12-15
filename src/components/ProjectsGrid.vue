@@ -6,6 +6,7 @@
                 :src="item.node.thumbnail"
                 :alt="item.node.title"
                 class="thumbnail"
+                loading="lazy"
             />
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
