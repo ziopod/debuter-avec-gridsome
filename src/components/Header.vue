@@ -64,7 +64,7 @@ export default {
     text-transform: uppercase;   
 }
 .nav > * {
-    font-size: 0.em;
+    font-size: 0.9em;
     font-weight: 600;
     text-decoration: none;
     margin-top: 4px;
