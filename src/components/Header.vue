@@ -1,5 +1,5 @@
 <template>
-    <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
+    <header class="header" :class="{sticky: $route.path === '/'}">
         <div class="container">
             <div class="left">
                 <g-link :to="{ name: 'home' }" class="home-link">
@@ -64,7 +64,7 @@ export default {
     text-transform: uppercase;   
 }
 .nav > * {
-    font-size: 0.9em;
+    font-size: 0.9  em;
     font-weight: 600;
     text-decoration: none;
     margin-top: 4px;
