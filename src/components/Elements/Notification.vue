@@ -37,9 +37,12 @@ export default {
   },
   data() {
     return {
-      isActive: localStorage.getItem(`notification-${this.notification.id}`) !== 'false',
+      isActive: true,
       uid: null
     }
+  },
+  mounted() {
+    this.isActive = localStorage.getItem(`notification-${this.notification.id}`) !== 'false'
   },
   methods: {
     toggle() {
