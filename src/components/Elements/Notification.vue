@@ -1,6 +1,6 @@
 <template>
-  <!-- 
-    La propriété dynamique `color` est passé à l'attribut HTML `class` 
+  <!--
+    La propriété dynamique `color` est passé à l'attribut HTML `class`
     via le shorthand `v-bind`.
     `v-show` affiche ou non le composant en focntion de l'état de `isActive`.
     Documenation sur `v-show` : https://vuejs.org/v2/api/#v-show
@@ -40,7 +40,7 @@ export default {
      * Lecture du stockage local du navigateur et attribution de la valeur
      * à `isActive`
      */
-    this.isActive = localStorage.getItem(`notification-${this.notification.id}is-active`) !== 'false'
+    this.isActive = localStorage.getItem(`notification-${this.notification.id}-is-active`) !== 'false'
   },
   methods: {
     /**
