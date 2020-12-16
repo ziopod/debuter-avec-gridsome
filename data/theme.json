@@ -12,9 +12,9 @@
       "message": "Notification administrée depuis Forestry"
     },
     {
-      "id": "unique-id-B",
+      "id": "local-storage",
       "color": "is-warning",
-      "message": "Notification B"
+      "message": "L'état affiché ou non d'une notification est enregistré localement dans le navigateur."
     }
   ]
 }
