@@ -7,7 +7,7 @@
   "hero_subtitle": "Les meilleurs designers web pratiquent beaucoup la conception web, et c'est bien pour cela qu'il sont les meilleurs.",
   "notifications": [
     {
-      "id": "unique-id-a",
+      "id": "exemple-notification",
       "color": "is-info",
       "message": "Exemple de notification"
     },
