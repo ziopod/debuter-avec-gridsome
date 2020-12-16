@@ -5,8 +5,8 @@ date: 2019-01-03
 categories:
 - photography
 - yellow
-project_bg_color: "#EFFFE8"
-project_fg_color: "#41D600"
+project_bg_color: "#422402"
+project_fg_color: "#F6ECD6"
 
 ---
 ![](/uploads/markus-spiske-516263-unsplash.jpg)
