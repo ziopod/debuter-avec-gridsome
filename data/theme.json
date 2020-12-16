@@ -1,8 +1,24 @@
 {
   "footer": "Copyright &copy; 2019",
   "dark_mode": false,
-  "site_name": "Nichlas W. Andersen",
+  "site_name": "Apprendre Vue.js",
   "site_description": "Creative technologist",
-  "hero_title": "Simplicity. Aesthetics. Value.",
-  "hero_subtitle": "Hi there, I'm an independent Digital Designer &amp; Art Director focused on digital design for brands that like to have fun."
+  "hero_title": "Une œil sur les générateurs de site statique",
+  "hero_subtitle": "Les meilleurs designers web pratiquent beaucoup la conception web, et c'est bien pour cela qu'il sont les meilleurs.",
+  "notification": {
+    "message": "Une message depuis le fichier de configuration, celui-ci peut être géré via le CMS maintenant.",
+    "color": "is-info"
+  },
+  "notifications": [
+    {
+      "id": "unique-id-a",
+      "color": "is-info",
+      "message": "Notification A"
+    },
+    {
+      "id": "unique-id-B",
+      "color": "is-warning",
+      "message": "Notification B"
+    }
+  ]
 }

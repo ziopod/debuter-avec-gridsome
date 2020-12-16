@@ -54,7 +54,7 @@ export default {
   color: var(--color-base-1);
 }
 .journal-header {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -80,7 +80,6 @@ export default {
   padding: 0;
 }
 .journal-title {
-  font-size: 2rem;
   color: var(--color-contrast);
 }
 .journal-excerpt {

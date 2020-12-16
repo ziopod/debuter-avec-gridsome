@@ -16,11 +16,12 @@
                 <g-link class="nav__link" to="/journal">Journal</g-link>
                 <g-link class="nav__link" to="/contact">Say Hi!</g-link>
             </nav>
-        </div>
+        </div>      
     </header>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -56,14 +57,14 @@ export default {
     height: 1.5rem;
 }
 .site-name {
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-transform: uppercase;   
 }
 .nav > * {
-    font-size: 0.9rem;
+    font-size: 0.em;
     font-weight: 600;
     text-decoration: none;
     margin-top: 4px;

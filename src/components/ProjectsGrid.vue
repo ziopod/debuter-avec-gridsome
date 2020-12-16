@@ -48,12 +48,11 @@ export default {
   box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
 }
 .project-title {
-  font-size: 1rem;
   color: var(--color-contrast);
   margin: 2rem 0 1rem 0;
 }
 .categories {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: var(--color-contrast-1);
 }
 .category {

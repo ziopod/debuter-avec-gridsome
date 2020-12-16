@@ -28,7 +28,7 @@ export default {
 .latest-journals-heading {
   margin-top: 6rem;
   margin-bottom: 1rem;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -59,7 +59,7 @@ export default {
 }
 
 .journal-title {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.35;
 }
 

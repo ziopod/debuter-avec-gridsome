@@ -42,7 +42,7 @@ export default {}
   padding: 2rem 0 4rem 0;
 }
 .contact-title {
-  font-size: 4rem;
+  font-size: 4em;
   margin: 0 0 4rem 0;
   padding: 0;
 }
@@ -68,7 +68,7 @@ input,textarea {
   border-radius: 0.3rem;
   padding: 0.8rem 1rem;
   color: inherit;
-  font-size: 1rem;
+  font-size: 1em;
   width: 100%;
 }
 textarea {
@@ -80,13 +80,13 @@ textarea {
   background: var(--color-contrast);
   outline: none;
   border: 0;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   padding: 0.8rem 1.6rem;
   border-radius: 0.3rem;
   margin-top: 2rem;
   cursor: pointer;
   transition: opacity 0.25s ease;
-  font-size: 500;
+  font-weight: 500;
   letter-spacing: 0.035em;
 }
 .button:hover {
@@ -96,4 +96,3 @@ textarea {
   border: 1px solid var(--color-base-1);
 }
 </style>
-

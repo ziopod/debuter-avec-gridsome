@@ -66,14 +66,13 @@ export default {
   padding: 20vh 0 4rem 0;
 }
 .project-title {
-  font-size: 4rem;
   margin: 0 0 4rem 0;
   padding: 0;
 }
 .project-info {
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .project-info > div {
   margin-right: 4rem;

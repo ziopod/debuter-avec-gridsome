@@ -38,7 +38,12 @@ query Posts {
 import Hero from "@/components/Hero"
 import ProjectsGrid from "@/components/ProjectsGrid"
 import LatestJournals from "@/components/LatestJournals"
-
+/**
+ * Exemple de composant avec interaction 
+ * TP : créer un composant bouton d'appel à l'action avec la
+ * possibilité de transmettre l'URL du bouton sos forme de 
+ * propriété
+ */
 export default {
   components: {
     Hero,

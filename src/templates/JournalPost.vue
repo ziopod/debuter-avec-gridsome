@@ -63,14 +63,13 @@ export default {
   padding: 2rem 0 4rem 0;
 }
 .journal-title {
-  font-size: 4rem;
   margin: 0 0 4rem 0;
   padding: 0;
 }
 .journal-meta {
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .journal-meta > div {
   margin-right: 4rem;
