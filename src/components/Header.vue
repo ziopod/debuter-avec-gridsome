@@ -1,28 +1,48 @@
 <template>
-  <header class="header" :class="{sticky: $route.path === '/'}">
-    <div class="container">
-      <div class="left">
-        <g-link :to="{ name: 'home' }" class="home-link">
-          <img
-            src="../../static/logo.svg"
-            :alt="settings.site_name"
-            class="logo"
-            width="60px"
-            height="24px"
-          />
-          </g-link>
+  <div>
+    <header class="header" :class="{sticky: $route.path === '/'}">
+      <div class="container">
+        <div class="left">
+          <g-link :to="{ name: 'home' }" class="home-link">
+            <img
+              src="../../static/logo.svg"
+              :alt="settings.site_name"
+              class="logo"
+              width="60px"
+              height="24px"
+            />
+            </g-link>
+        </div>
+        <nav class="nav right">
+          <g-link class="nav__link" to="/journal">Journal</g-link>
+          <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+        </nav>
       </div>
-      <nav class="nav right">
-        <g-link class="nav__link" to="/journal">Journal</g-link>
-        <g-link class="nav__link" to="/contact">Say Hi!</g-link>
-      </nav>
+    </header>
+    <!--
+      La directive `v-for` : https://fr.vuejs.org/v2/api/#v-for
+      Nous permet ici de créer une boucle itérative sur les notifications
+    -->
+    <div v-for="notification in settings.notifications" :key="notification.id">
+      <!--
+        Pour chaque entrée de `notifications` un composant est crée,
+        la données de notification est passé au composant via `v-bind`.
+        Documentation sur `v-bind`: https://fr.vuejs.org/v2/api/#v-bind
+      -->
+      <Notification
+        v-bind:notification="notification"
+      />
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
+import Notification from '@/components/Elements/Notification.vue'
 
 export default {
+  components: {
+    Notification
+  },
   data() {
     return {
       logo: require("../../static/logo.svg"),

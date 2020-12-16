@@ -1,19 +1,5 @@
 <template>
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-      <!--
-        La directive `v-for` : https://fr.vuejs.org/v2/api/#v-for
-        Nous permet ici de créer une boucle itérative sur les notifications
-      -->
-      <div v-for="notification in settings.notifications" :key="notification.id">
-        <!--
-          Pour chaque entrée de `notifications` un composant est crée,
-          la données de notification est passé au composant via `v-bind`.
-          Documentation sur `v-bind`: https://fr.vuejs.org/v2/api/#v-bind
-        -->
-        <Notification
-          v-bind:notification="notification"
-        />
-      </div>
     <Header />
     <slot/>
     <Footer />
@@ -24,18 +10,10 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
-import Notification from '@/components/Elements/Notification.vue'
-
 export default {
   components: {
     Header,
-    Footer,
-    Notification
-  },
-  data() {
-    return {
-      settings: require('../../data/theme.json'),
-    }
+    Footer
   }
 }
 </script>
