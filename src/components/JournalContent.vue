@@ -1,14 +1,14 @@
 <template>
-    <div 
-        class="journal-content"
-        v-html="content"
-    />
+  <div
+    class="journal-content"
+    v-html="content"
+  />
 </template>
 
 <script>
 export default {
-    props: {
-        content: String
-    }
+  props: {
+    content: String
+  }
 }
 </script>
