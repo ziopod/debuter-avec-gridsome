@@ -1,10 +1,15 @@
 <template>
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-       <!-- Passer une propriété dynamique `message` -->
-      <!-- Directive Vue `v-bind` -->
-      <!-- Bind = attacher en FR -->
-      <!-- Passer une propriété statique `color` -->
+      <!--
+        La directive `v-for` : https://fr.vuejs.org/v2/api/#v-for
+        Nous permet ici de créer une boucle itérative sur les notifications
+      -->
       <div v-for="notification in settings.notifications" :key="notification.id">
+        <!--
+          Pour chaque entrée de `notifications` un composant est crée,
+          la données de notification est passé au composant via `v-bind`.
+          Documentation sur `v-bind`: https://fr.vuejs.org/v2/api/#v-bind
+        -->
         <Notification
           v-bind:notification="notification"
         />
@@ -18,17 +23,7 @@
 <script>
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-/**
- * La définition du message ici est utile que
- * si l'on veut exploiter du code logique.
- * Par exemple, récupérer un message définie via le CMS.
- * cf. `settings.json` dans `components/Header.vue`
- * 
- * Techniquement, on pourrait également gérer la couleur depuis le CMS,
- * permettre l'écriture du message au format HTML, afficher plusieurs;
- * notifications, "zoner" les notification, etc.
- * 
- */
+
 import Notification from '@/components/Elements/Notification.vue'
 
 export default {
@@ -40,7 +35,6 @@ export default {
   data() {
     return {
       settings: require('../../data/theme.json'),
-      message: "Une simple message : Salut! 😃"
     }
   }
 }
@@ -53,13 +47,17 @@ export default {
 }
 @font-face {
   font-family: "PT Serif";
-  /* Éviter l'invisibilté de la fonte : https://web.dev/avoid-invisible-text */
+  /*
+    Éviter l'invisibilté de la fonte : https://web.dev/avoid-invisible-text
+  */
   font-display: auto;
   src: local('PT Serif'), url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap') format('woff2');
 }
 @font-face {
   font-family: "PT Sans";
-  /* Comment choisir le paramètre de font-display : https://developers.google.com/web/updates/2016/02/font-display */
+  /*
+    Comment choisir le paramètre de font-display : https://developers.google.com/web/updates/2016/02/font-display
+  */
   font-display: fallback;
   src: local('PT Sans'), url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap') format('woff2');
 }

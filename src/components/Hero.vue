@@ -2,14 +2,28 @@
     <div class="hero">
         <h1 class="hero-title" v-html="settings.hero_title" />
         <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
-        <a href="/journal/gridsome-forestry-cms" class="button">
-          Call to action
-        </a>
+        <!--
+          Appel du composant, des propriétés (Props) peuvent êtres passé au composant (ici `href` et `class`).
+          Notez que le contenu "Lire cet article" est une donnée passé via un Slot.
+          Documentation sur les slots : https://fr.vuejs.org/v2/guide/components.html#Distribution-de-contenu-avec-les-slots
+          Documentation sur les Props : https://fr.vuejs.org/v2/guide/components-props.html#Passage-de-props-statiques-ou-dynamiques
+        -->
+        <Button
+          href="/journal/gridsome-forestry-cms"
+          class="is-dark"
+        >Lire cet article</Button>
     </div>
 </template>
 
 <script>
+// Importez votre composant ici, l'extension `.vue` n'est pas nécesaire.
+import Button from '@/components/Elements/Button'
+
 export default {
+  // Vous déclarer vos composants ici.
+  components: {
+    Button
+  },
   data() {
     return {
       settings: require("../../data/theme.json")
@@ -44,14 +58,5 @@ export default {
     font-style: italic;
     line-height: 1.3em;
     padding: 0;
-}
-.button {
-  display: inline-block;
-  background: black;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1em;
-  float: right;
 }
 </style>

@@ -1,30 +1,24 @@
 <template>
-  <!-- Passer la propriété dynamique `color` à l'attribut HTML `class` -->
-  <!-- Shorthand de `v-bind` : `:` -->
+  <!-- 
+    La propriété dynamique `color` est passé à l'attribut HTML `class` 
+    via le shorthand `v-bind`.
+    `v-show` affiche ou non le composant en focntion de l'état de `isActive`.
+    Documenation sur `v-show` : https://vuejs.org/v2/api/#v-show
+  -->
   <div class="message" v-bind:class="notification.color" v-show="isActive">
     {{ notification.message }}
-    <!-- Sous forme de composant -->
-    <!-- Shorthand de `v-on` : `@` -->
-    <!-- <Close v-on:click.native="isActive = !isActive" /> -->
-    <Close v-on:click.native="toggle()" />
-    <!-- <button
-      class="close"
-      aria-label="close"
-      @click="isActive = !isActive"
-    ></button> -->
+    <!--
+      Le bouton de fermeture de notification est gérée sous forme de composant
+      La directive `v-on` est utilisée pour écouter l'évenement HTML de click sur le bouton, ce click déclenchetra la fonction `close()`.
+      Documentation sur `v-on` : https://fr.vuejs.org/v2/api/#v-on
+      Documentation sue les écouteurs d'évenement HTML : https://developer.mozilla.org/fr/docs/Web/API/EventListener
+    -->
+    <Close v-on:click.native="close()" />
   </div>
 </template>
 <script>
-/**
- * Étapes : 
- * 1. créer le composant `Elements/Notification.vue` avec son CSS
- * 2. ajouter la propriété `message` en statique
- * 3. ajouter la variante de style `is-danger`
- * 4. appliquer la variante avec la propriété dynamyque `color`
- * 5. créer le bouton close (sans CSS) avec sont interaction
- * 6. passer le bouton sous forme de composant pour gérer la stylisation
- */
 import Close from '@/components/Elements/Close.vue'
+
 export default {
   props: {
     notification: {
@@ -37,17 +31,26 @@ export default {
   },
   data() {
     return {
-      isActive: false,
-      uid: null
+      /* Déclaration de l'état de l'affichage pour ce composant */
+      isActive: false
     }
   },
   mounted() {
-    this.isActive = localStorage.getItem(`notification-${this.notification.id}`) !== 'false'
+    /**
+     * Lecture du stockage local du navigateur et attribution de la valeur
+     * à `isActive`
+     */
+    this.isActive = localStorage.getItem(`notification-${this.notification.id}is-active`) !== 'false'
   },
   methods: {
-    toggle() {
-      this.isActive = !this.isActive
-      localStorage.setItem(`notification-${this.notification.id}`, this.isActive)
+    /**
+     * Méthode de fermeture de la notification
+     * Documentation sur les métodes : https://fr.vuejs.org/v2/api/index.html#methods
+     */
+    close() {
+      this.isActive = false
+      // Enregistrement de l'état dans le stokage local
+      localStorage.setItem(`notification-${this.notification.id}-is-active`, this.isActive)
     }
   }
 }
