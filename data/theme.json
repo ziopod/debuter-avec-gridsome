@@ -4,7 +4,7 @@
   "site_name": "Apprendre Vue.js",
   "site_description": "Creative technologist",
   "hero_title": "Un œil sur les générateurs de site statique",
-  "hero_subtitle": "The best pilots fly more than the others; that's why they're the best.<br>— <a href=\"https://fr.wikipedia.org/wiki/Chuck_Yeager\" title=\"\">Chuck Yeager</a>",
+  "hero_subtitle": "The best pilots fly more than the others;<br>that's why they're the best.<br>— <a href=\"https://fr.wikipedia.org/wiki/Chuck_Yeager\" title=\"\">Chuck Yeager</a>",
   "notifications": [
     {
       "id": "exemple-administrable",
@@ -14,7 +14,7 @@
     {
       "id": "local-storage",
       "color": "is-warning",
-      "message": "Lorsque qu'une notification est fermée, son état est enregistrée localement dans le navigateur."
+      "message": "Lorsque qu'une notification est fermée, son état est enregistré localement dans le navigateur."
     }
   ]
 }
