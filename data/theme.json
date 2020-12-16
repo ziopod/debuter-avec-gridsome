@@ -14,7 +14,7 @@
     {
       "id": "local-storage",
       "color": "is-warning",
-      "message": "Lorsque qu'une notification est fermée, son état est enregistrée localement dans le navigateur."
+      "message": "Lorsque qu'une notification est fermée, son état est enregistré localement dans le navigateur."
     }
   ]
 }
