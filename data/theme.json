@@ -7,7 +7,7 @@
   "hero_subtitle": "Les meilleurs designers web pratiquent beaucoup la conception web, et c'est bien pour cela qu'il sont les meilleurs.",
   "notifications": [
     {
-      "id": "exemple-notification",
+      "id": "exemple-administrable",
       "color": "is-info",
       "message": "Notification administrée depuis Forestry"
     },
