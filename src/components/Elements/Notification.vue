@@ -63,6 +63,7 @@ export default {
   padding: 1em;
 }
 .message.is-warning {
+  color: black;
   background-color: rgb(255, 221, 87);
 }
 .message.is-info {
