@@ -5,6 +5,39 @@ fields:
 - type: text
   name: site_name
   label: Site name
+- name: notifications
+  type: field_group_list
+  fields:
+  - name: id
+    type: text
+    config:
+      required: true
+      max: 255
+    label: Id
+  - name: message
+    type: text
+    config:
+      required: true
+    label: Message
+  - name: color
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - is-info
+      - is-warning
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: color
+  config:
+    min: 
+    max: 
+    labelField: message
+  label: Notifications
 - type: textarea
   name: site_description
   label: Site description
