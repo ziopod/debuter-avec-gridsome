@@ -2,15 +2,7 @@
     <div class="hero">
         <h1 class="hero-title" v-html="settings.hero_title" />
         <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
-        <a href="/journal/gridsome-forestry-cms" class="buton" style="
-        display: inline-block;
-        background: black;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1em;
-        float: right;
-        ">
+        <a href="/journal/gridsome-forestry-cms" class="button">
           Call to action
         </a>
     </div>
@@ -52,5 +44,14 @@ export default {
     font-style: italic;
     line-height: 1.3em;
     padding: 0;
+}
+.button {
+  display: inline-block;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em;
+  float: right;
 }
 </style>
