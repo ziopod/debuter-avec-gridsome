@@ -9,7 +9,7 @@
               :alt="settings.site_name"
               class="logo"
               width="60px"
-              height="24px"
+              height="87px"
             />
             </g-link>
         </div>
@@ -74,7 +74,7 @@ export default {
   text-decoration: none;
 }
 .logo {
-  height: 1.5rem;
+  height: 4rem;
 }
 .site-name {
   font-size: 0.9em;
