@@ -9,7 +9,7 @@ La [stack](https://fr.wiktionary.org/wiki/stack) (ensemble de composants logicie
  - un service d'hebergement [CDN](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_diffusion_de_contenu);
  - générateur de site statique ;
 
-Dans le cadre de cet exercice; **Le service de versionage du code source** utilisé sera [Github](github.com), **la gestion de contenu** sera assurée sur [Forestry](forestry.io), **l'hébergement CDN** sur [Vercel](vercel.com) et **le générateur statique** utilisé sera [Gridsome](gridsome.org).
+Dans le cadre de cet exercice; **Le service de versionnage du code source** utilisé sera [Github](github.com), **la gestion de contenu** sera assurée sur [Forestry](forestry.io), **l'hébergement CDN** sur [Vercel](vercel.com) et **le générateur statique** utilisé sera [Gridsome](gridsome.org).
 
 Un compte Gihub est nécessaire pour ce cours, les autres service pourrons vous authentifier au travers de votre compte Github.
 
@@ -172,7 +172,7 @@ Pour se faciliter la tâche, n'hésitez pas installer une extension de coloratio
 
 ### Description du layout principal
 
-Jettons un œil au fichier situé à `src/layouts/Default.vue`. Celui-ci sera chargé pour toutes les URL du site, il chargeras d'autre éléments Vue.js en focntion du contexte de l'URL.
+Jettons un œil au fichier situé à `src/layouts/Default.vue`. Celui-ci sera chargé pour toutes les URL du site, il chargeras d'autre éléments Vue.js en fonction du contexte de l'URL.
 
 Sur ce fichier, nous observons trois marqueurs Vue.js typique : 
  - `<template>` pour placer les marqueurs HTML et la logique d'affichage ;
@@ -267,7 +267,7 @@ Cette variable de taille de corps, vas nous permettre de modfifier la taille de 
 }
 ~~~
 
-Nous avons modifié la valeur de la variable `--font-size` pour la balise HTML `body` et toutes ses balises descendatnes lorsque la page sera affiché sur un support d'au moins 860px de large (`min-width: 860px`).
+Nous avons modifié la valeur de la variable `--font-size` pour la balise HTML `body` et toutes ses balises descendantes lorsque la page sera affiché sur un support d'au moins 860px de large (`min-width: 860px`).
 
 Pour que cet astuce d'héritage de taille de corps fonctionne correctement sur ce thème, il est nécessaire de **modifier toutes les unités de mesures `rem` des propriétés `font-size`** par des l'unité `em`.
 
